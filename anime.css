@@ -1,0 +1,43 @@
+.box {
+  height: 100px;
+  width: 300px;
+  background-color: #ec7575;
+  font-size: 50px;
+  color: yellow;
+  text-align: center;
+
+  /* animation-name: animationPro;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+  animation-delay: 0s;
+  animation-iteration-count: 4;
+  animation-direction: alternate; */
+
+  animation-name: colorPro;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+/* to create animation we use -- this is just a blueprint*/
+
+@keyframes animationPro {
+  from {
+    font-size: 20px;
+  }
+  to {
+    font-size: 50px;
+  }
+}
+
+@keyframes colorPro {
+  from {
+    background-color: green;
+  }
+  to {
+    background-color: blue;
+    border-radius: 100px;
+  }
+}

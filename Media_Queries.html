@@ -1,0 +1,47 @@
+<!--Media Queries
+used to create responsive designs
+
+media features- width(of viewport)
+
+
+@media(width:400px){
+div{
+  background-color: red;
+  width: 100px;
+  height: 100px;
+  }
+}
+
+mostly used media features:
+1)min-width
+2)max-width
+
+/* change when it reaches min width */
+1))   @media(min-width:400px){
+   div{
+    background-color: green;
+    width: 200px;
+    height: 200px;
+  }
+}
+
+
+/* change when it reaches max width */
+2)) @media(max-width:400px){
+   div{
+    background-color: green;
+    width: 200px;
+    height: 200px;
+  }
+}
+
+
+3)) to define range of media queries - we use *AND* keyword!
+@media(min-width:400px) and (max-width:600px){
+   div{
+    background-color: blue;
+    width: 300px;
+    height: 300px;
+  }
+}
+->

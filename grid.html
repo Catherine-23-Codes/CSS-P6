@@ -1,0 +1,70 @@
+<!--Grid
+ setting a containers display to grid will makae all
+ children grid items.
+
+container{
+  display: grid;
+}
+
+---------------------------------------------------------------------------------------
+Imp concepts:
+1) grid lines - these are the lines that separate grid items
+2) grid tracks - these are the spaces between grid lines
+3) grid cells - these are the individual boxes formed by grid lines
+
+---------------------------------------------------------------------------------------
+Grid Template: they define the lines and track sizing
+1) grid-template-columns
+2) grid-template-rows
+
+no.of lines=no.of tracks +1 ;
+always tracks will be one less than the number of lines
+
+---------------------------------------------------------------------------------------
+
+
+*****Grid template:*****
+repeat is used to divide all the available space
+1fr=  one fraction of 100% width
+
+
+grid-template-rows:repeat(count,fr);
+grid-template-columns:repeat(count,fr);
+
+grid-template-rows:repeat(2,1fr);
+grid-template-rows:1fr 1fr;
+
+---------------------------------------------------------------------------------------
+
+Grid gap:
+row-gap: 10px;
+column-gap: 30px;
+grid-gap: 10px 30px; /* row gap & column gap */
+
+---------------------------------------------------------------------------------------
+
+***Grid coulmns:
+defines an item's starting and ending position inside the columns
+grid-column-start:line_number;
+grid-column-end:line_number;
+
+                    OR
+grid-column:start_column / end_column;
+grid-column:start_column / span_no.;
+
+***Grid rows:
+defines an item's starting and ending position inside the rows
+grid-row-start:line_number;
+grid-row-end:line_number;
+
+                    OR
+grid-row:start_row / end_row;
+grid-row:start_row / span_no.;
+---------------------------------------------------------------------------------------
+
+Grid properties:
+1) justify-items: end; /* aligns items to the end of the grid */
+2) align-items: center; /* aligns items to the center of the grid */
+
+** aligns that one specific item to either left, right, center or start **
+3) justify-self: start; /* aligns the item to the start of the grid */
